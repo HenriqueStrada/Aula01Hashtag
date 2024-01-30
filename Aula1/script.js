@@ -9,7 +9,7 @@ let taTocando = false;
 let capitulo = 1;
 window.onload = function() {
 
-function tocarFaixa() {
+function tocarFaixa(){
   botaoPlayPause.classList.remove("bi-play-circle");
   botaoPlayPause.classList.add("bi-pause-circle");
   audio.play();
@@ -68,13 +68,14 @@ botaoProximoCapitulo.addEventListener("mouseout", function (){
 });
 //////////////////////////////////
 botaoCapituloAnterior.addEventListener("mouseover", function (){
-  botaoCapituloAnterior.classList.remove("bi bi-skip-start");
-  botaoCapituloAnterior.classList.add("bi bi-skip-start-fill");
+  botaoCapituloAnterior.classList.remove("bi-skip-start");
+  botaoCapituloAnterior.classList.add("bi-skip-start-fill");
 });
 botaoCapituloAnterior.addEventListener("mouseout", function (){
-  botaoCapituloAnterior.classList.remove("bi bi-skip-start-fill");
-  botaoCapituloAnterior.classList.add("bi bi-skip-start");
+  botaoCapituloAnterior.classList.remove("bi-skip-start-fill");
+  botaoCapituloAnterior.classList.add("bi-skip-start");
 });
 //////////////////////////////////
+
 audio.addEventListener("ended", proximoCapitulo);
 }
